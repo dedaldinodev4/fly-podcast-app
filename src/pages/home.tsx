@@ -4,7 +4,7 @@ import { RecentEpisodes } from "@/components/recents-episodes"
 import { Contact } from "@/components/contact"
 import { infoData } from "@/data/infoData"
 
-export const Home = () => {
+export default function Home () {
   const { sections } = infoData
 
   return (
