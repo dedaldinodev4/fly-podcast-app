@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+# 🎙 Fly Podcast — Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
 
-Currently, two official plugins are available:
+Fly Podcast is a modern, cinematic podcast platform designed to showcase powerful conversations, inspiring guests, and impactful stories.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project represents the official web presence of **Fly Podcast**, built with performance, scalability, and premium user experience in mind.
 
-## React Compiler
+The goal is to deliver:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- A cinematic hero section  
+- Smooth global animations  
+- Premium video cards with modal experience  
+- Fully responsive layout  
+- Strong brand identity using the primary color `#FF6900`  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React**
+- **Vite** 
+* **Tailwind CSS v4**
+* **TanStack Router** (routing)
+* **TanStack React Query** (async state management)
+* **Zustand** (lightweight global state)
+* **Zod** (schema validation)
+- **TypeScript** – Type safety and scalability  
+- **Tailwind CSS** – Utility-first styling  
+- **Framer Motion** – Advanced animations  
+- **Lucide Icons** – Modern icon system  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ✨ Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- 🎬 Cinematic Hero Section  
+- 🎥 Video Cards with Animated Modal  
+- 📱 Fully Responsive Design  
+- 🎨 Custom Brand Gradient System  
+- ⚡ Optimized Performance  
+- 🔥 Structured Global Animation System  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎨 Design Philosophy
+
+The UI follows a **premium cinematic approach**, focusing on:
+
+- Strong visual hierarchy  
+- Smooth transitions and micro-interactions  
+- Dark theme foundation  
+- Brand-centric gradients based on `#FF6900`  
+- Mobile-first responsive structure  
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── app/
+│ ├── RootLayout.tsx
+│ ├── routes.ts
+├── components/
+│ ├── common/
+│ │    ├── footer.tsx
+│ │    └── navbar.tsx
+│ ├── shared/
+│ │    └── card-video.tsx
+│ ├── about.tsx
+│ ├── contact.tsx
+│ ├── home.tsx
+│ ├── hero.tsx
+│ └── recents-episodes.tsx
+├── lib/
+│ ├── animations.ts
+│ ├── react-query.ts
+│ └── utils.ts
+├── types/
+├── utils/
+├── index.css
+└── main.tsx``
 ```
