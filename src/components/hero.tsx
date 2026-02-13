@@ -30,7 +30,7 @@ export function Hero({ data }: Props) {
         style={{ y }}
         autoPlay
         loop
-        playsInline
+        playsInline 
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src='/videos/fly-podcast.mp4' type="video/mp4" />

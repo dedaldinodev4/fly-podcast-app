@@ -6,13 +6,13 @@ import { Footer } from "@/components/common/footer";
 
 export default function RootLayout() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <main className="relative bg-[#0F0F14] text-white overflow-hidden">
       <Navbar />
 
-      <main className="p-6">
+      <div className="">
         <Outlet />
-      </main>
+      </div>
       <Footer/>
-    </div>
+    </main>
   );
 }
