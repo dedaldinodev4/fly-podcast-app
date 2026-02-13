@@ -4,19 +4,13 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Link } from "@tanstack/react-router"
-
-
-const navlinks = [
-  { name: "Home", to: "/" },
-  { name: "Sobre", to: "#about" },
-  { name: "Episódios", to: "#videos" },
-  { name: "Contatos", to: "#contacts" }
-]
+import { infoData } from "@/data/infoData"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [active, setActive] = useState("Home")
   const [mobileOpen, setMobileOpen] = useState(false)
+  const { navlinks } = infoData.sections.navbar
 
   useEffect(() => {
     const handleScroll = () => {
