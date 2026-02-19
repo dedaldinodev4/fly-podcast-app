@@ -3,7 +3,7 @@ import type { Video } from "@/types/video";
 export const videos: Video[] = [
   {
     id: 1,
-    title: "Fly pocast com Young Double #381",
+    title: "Fly Podcast com Young Double #381",
     image: 'video-thumb-1.jpg',
     description: "O talento conquistador vai sentar-se no melhor programa do mundo para contar a sua história.",
     date: '10-Fev-2026',
@@ -27,7 +27,7 @@ export const videos: Video[] = [
   },
   {
     id: 4,
-    title: "Fly Pocast com Nzamba N'kunku Mpetelo Messami #371",
+    title: "Fly Podcast com Nzamba N'kunku Mpetelo Messami #371",
     image: 'video-thumb-4.jpg',
     description: "Como Nzambi é que manda, vamos entrar em frquência.Prepara-te, este episódio vai ser profundo.",
     date: '05-Jan-2026',
@@ -35,7 +35,7 @@ export const videos: Video[] = [
   },
   {
     id: 5,
-    title: "Fly pocast com Okenio M #366 #Dallas",
+    title: "Fly Podcast com Okenio M #366 #Dallas",
     image: 'video-thumb-5.jpg',
     description: "Chegou a hora de sentar com um dos rappers mais populares da nova geração, membro do grupo Young Family.",
     date: '08-Dez-2025',
@@ -43,7 +43,7 @@ export const videos: Video[] = [
   },
   {
     id: 6,
-    title: "Fly pocast com Paulelson #364",
+    title: "Fly Podcast com Paulelson #364",
     image: 'video-thumb-6.jpg',
     description: "Uma história de superação e sucesso, o novo Messi um dos rappers mais talentosos de Angola.",
     date: '30-Nov-2025',
